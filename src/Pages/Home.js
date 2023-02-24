@@ -1,12 +1,19 @@
 import React, { Component } from "react";
-import Title from "../component/Title";
+import Title from "../component/Title"
 
 class Home extends Component {
+    constructor() {
+        super()
+        this.state = {
+            title: 'Deep',
+            description: "It's nice to meet you."
+        }
+    }
+    
     render() {
         return(
             <>
-                <h1> This is Class Component </h1>
-                <Title titleText="I am Title."/>
+                <Title title={this.state.title} description={this.state.description} />
             </>
         );
     }
