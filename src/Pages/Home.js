@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Title from "../component/Title"
+import Counter from "../component/Counter";
 
 class Home extends Component {
     constructor() {
@@ -9,11 +10,12 @@ class Home extends Component {
             description: "It's nice to meet you."
         }
     }
-    
+
     render() {
-        return(
+        return (
             <>
                 <Title title={this.state.title} description={this.state.description} />
+                <Counter />
             </>
         );
     }
