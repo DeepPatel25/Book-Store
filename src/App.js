@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import About from './Pages/About'
 import Home from './Pages/Home'
+import List from './component/List'
+import Title from './component/Title'
 
 export default class App extends Component {
 	// App is a file which can store all our js files links and reference to them.
@@ -30,16 +32,19 @@ export default class App extends Component {
 	}
 
 	render() {
-		return this.state.isHome ? (
-			<Home />
-		) : this.state.isAbout ? (
-			<About />
-		) : (
-			<div>
-				<button onClick={this.changeHome}> Home </button>
-				<button onClick={this.changeAbout}> About</button>
-			</div>
-		)
+
+		return <Title />
+
+		// return this.state.isHome ? (
+		// 	<Home />
+		// ) : this.state.isAbout ? (
+		// 	<About />
+		// ) : (
+		// 	<div>
+		// 		<button onClick={this.changeHome}> Home </button>
+		// 		<button onClick={this.changeAbout}> About</button>
+		// 	</div>
+		// )
 
 		/* 
 		
