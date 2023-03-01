@@ -1,9 +1,10 @@
 import React from 'react'
+import './myTitle.css'
 
 export default function Title({ obj, key }) {
     return (
         <div>
-            <h2> I am {obj.title} desc is {obj.description} </h2>
+            <h2 className='heading'> I am {obj.title} desc is {obj.description} </h2>
         </div>
     )
 }

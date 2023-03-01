@@ -1,0 +1,10 @@
+.heading {
+    font-size: 34px;
+    color: brown;
+}
+
+.formStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
-import About from './Pages/About'
-import Home from './Pages/Home'
-import List from './component/List'
-import Title from './component/Title'
+import LoginForm from './component/LoginForm'
 
 export default class App extends Component {
 	// App is a file which can store all our js files links and reference to them.
 
+	/*  Constructor for changing Home and About pages.
 	constructor(props) {
 		super(props)
 
@@ -29,11 +27,13 @@ export default class App extends Component {
 		this.setState({
 			isAbout: true
 		})
-	}
+	} */
 
 	render() {
 
-		return <Title />
+		return <LoginForm />
+
+		// return <List />
 
 		// return this.state.isHome ? (
 		// 	<Home />
