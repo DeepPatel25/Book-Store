@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import LoginForm from './component/LoginForm'
+import FocusInput from './component/FocusInput'
 
 export default class App extends Component {
 	// App is a file which can store all our js files links and reference to them.
@@ -31,7 +31,16 @@ export default class App extends Component {
 
 	render() {
 
-		return <LoginForm />
+		// Day 8 
+		// Mounting and Updating Lifecycle
+		// return <LifeCycleA />
+
+		// Refs/ Refs With Class Components
+		// return <InputRef />
+		return <FocusInput />
+
+		// Day 7 
+		// return <LoginForm />
 
 		// return <List />
 

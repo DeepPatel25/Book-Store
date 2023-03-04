@@ -1,7 +1,7 @@
 import React from 'react'
 import './myTitle.css'
 
-export default function Title({ obj, key }) {
+function Title({ obj, key }) {
     return (
         <div>
             <h2 className='heading'> I am {obj.title} desc is {obj.description} </h2>
@@ -9,6 +9,7 @@ export default function Title({ obj, key }) {
     )
 }
 
+export default React.memo(Title)
 
 /*
 const Title = (props) => {
