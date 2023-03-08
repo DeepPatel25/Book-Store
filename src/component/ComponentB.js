@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import ComponentC from './ComponentC'
 
-export default class RenderPropsComponent extends Component {
+export default class ComponentB extends Component {
     render() {
         return (
             <div>
-                {this.props.render()}
+                <ComponentC />
             </div>
         )
     }

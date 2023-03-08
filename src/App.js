@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import RenderPropsComponent from './component/RenderPropsComponent'
+import ComponentA from './component/ComponentA'
+import { UserProvider } from './component/userContext'
 
 export default class App extends Component {
 	// App is a file which can store all our js files links and reference to them.
@@ -31,12 +32,19 @@ export default class App extends Component {
 
 	render() {
 
+		// Day 10
+		return (
+			<UserProvider value="Deep">
+				<ComponentA />
+			</UserProvider>
+		)
+
 		// Day 9 Task 2
-		return <RenderPropsComponent render={() => {
-			return (
-				<h3>I am Coming from render props</h3>
-			)
-		}} />
+		// return <RenderPropsComponent render={() => {
+		// 	return (
+		// 		<h3>I am Coming from render props</h3>
+		// 	)
+		// }} />
 
 		// Day 9
 		// return <Home />
