@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Users from './component/Users'
+import Post from './component/Post'
 
 export default class App extends Component {
 	// App is a file which can store all our js files links and reference to them.
@@ -32,7 +32,10 @@ export default class App extends Component {
 	render() {
 
 		// Day 11 Task 1
-		return <Users />
+		// return <Users />
+
+		// Day 12 Task 2
+		return <Post />
 
 		// Day 10
 		// return (
