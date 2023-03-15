@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import CounterHook from './component/CounterHook'
+import LoginForm from './component/LoginForm'
 
 export default class App extends Component {
 	// App is a file which can store all our js files links and reference to them.
@@ -31,8 +31,11 @@ export default class App extends Component {
 
 	render() {
 
+		// Day 14
+		return <LoginForm />
+
 		// Day 13 
-		return <CounterHook />
+		// return <CounterHook />
 
 		// Day 11 Task 1
 		// return <Users />
