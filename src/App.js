@@ -1,10 +1,22 @@
-import React, { Component } from 'react'
-import MouseContainer from './component/MouseContainer'
+import React from "react";
+import PostDetail from "./component/PostDetail";
 
-export default class App extends Component {
-	// App is a file which can store all our js files links and reference to them.
+function App() {
+  return (
+    <div>
+      <PostDetail />
+    </div>
+  );
+}
 
-	/*  Constructor for changing Home and About pages.
+export default App;
+
+// import React, { Component } from 'react'
+
+// export default class App extends Component {
+// App is a file which can store all our js files links and reference to them.
+
+/*  Constructor for changing Home and About pages.
 	constructor(props) {
 		super(props)
 
@@ -29,68 +41,70 @@ export default class App extends Component {
 		})
 	} */
 
-	render() {
+// render() {
 
-		// Day 16
-		return <MouseContainer />
+// Day 17
 
-		// Day 15
-		// return <Users />
+// Day 16
+// return <MouseContainer />
 
-		// Day 14
-		// return <LoginForm />
+// Day 15
+// return <Users />
 
-		// Day 13 
-		// return <CounterHook />
+// Day 14
+// return <LoginForm />
 
-		// Day 11 Task 1
-		// return <Users />
+// Day 13
+// return <CounterHook />
 
-		// Day 12 Task 2
-		// return <Post />
+// Day 11 Task 1
+// return <Users />
 
-		// Day 10
-		// return (
-		// 	<UserProvider value="Deep">
-		// 		<ComponentA />
-		// 	</UserProvider>
-		// )
+// Day 12 Task 2
+// return <Post />
 
-		// Day 9 Task 2
-		// return <RenderPropsComponent render={() => {
-		// 	return (
-		// 		<h3>I am Coming from render props</h3>
-		// 	)
-		// }} />
+// Day 10
+// return (
+// 	<UserProvider value="Deep">
+// 		<ComponentA />
+// 	</UserProvider>
+// )
 
-		// Day 9
-		// return <Home />
+// Day 9 Task 2
+// return <RenderPropsComponent render={() => {
+// 	return (
+// 		<h3>I am Coming from render props</h3>
+// 	)
+// }} />
 
-		// Day 8 
-		// Mounting and Updating Lifecycle
-		// return <LifeCycleA />
+// Day 9
+// return <Home />
 
-		// Refs/ Refs With Class Components
-		// return <InputRef />
-		// return <FocusInput />
+// Day 8
+// Mounting and Updating Lifecycle
+// return <LifeCycleA />
 
-		// Day 7 
-		// return <LoginForm />
+// Refs/ Refs With Class Components
+// return <InputRef />
+// return <FocusInput />
 
-		// return <List />
+// Day 7
+// return <LoginForm />
 
-		// return this.state.isHome ? (
-		// 	<Home />
-		// ) : this.state.isAbout ? (
-		// 	<About />
-		// ) : (
-		// 	<div>
-		// 		<button onClick={this.changeHome}> Home </button>
-		// 		<button onClick={this.changeAbout}> About</button>
-		// 	</div>
-		// )
+// return <List />
 
-		/* 
+// return this.state.isHome ? (
+// 	<Home />
+// ) : this.state.isAbout ? (
+// 	<About />
+// ) : (
+// 	<div>
+// 		<button onClick={this.changeHome}> Home </button>
+// 		<button onClick={this.changeAbout}> About</button>
+// 	</div>
+// )
+
+/* 
 		
 		Approach using if-else with support of message variable.
 
@@ -107,6 +121,5 @@ export default class App extends Component {
 		}
 
 		return pageRender */
-	}
-}
-
+// }
+// }
