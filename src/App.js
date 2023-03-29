@@ -1,16 +1,12 @@
 import React from "react";
-import ComponentA from "./component/ComponentA";
+import Counter1 from "./component/Counter1";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 
 function App() {
   return (
-    <UserContext.Provider value={"Deep"}>
-      <ChannelContext.Provider value={"Patel"}>
-        <ComponentA />
-      </ChannelContext.Provider>
-    </UserContext.Provider>
+    <Counter1 />
   );
 }
 
